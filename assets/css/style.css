@@ -1,0 +1,377 @@
+:root {
+    --primary-color: #003566;
+    --base-color: #212629;
+}
+
+/* 003566 */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+h1.text-warning,
+h2.text-warning,
+h3.text-warning,
+h4.text-warning,
+h5.text-warning,
+h6.text-warning {
+    text-shadow: 1px 1px 1px #fff;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.bg-gray {
+    background-color: #f8f9fa !important;
+}
+
+.header-top a {
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 0px 20px;
+    /* margin: 0; */
+
+}
+
+.header-top .d-flex>div:first-child a:not(:nth-child(3)),
+.header-top .d-flex>div:nth-child(2) a:not(:nth-child(4)) {
+    border-right: 2px solid var(--primary-color);
+}
+
+/* From Uiverse.io by Damithkumara */
+.mainBtn {
+    position: relative;
+    padding: 20px;
+    background: var(--base-color);
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid var(--primary-color);
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* From Uiverse.io by barisdogansutcu */
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: rgb(19, 19, 19);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #ffffff;
+    border: solid 1px #e8e8e82d;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+    box-shadow: rgba(233, 233, 233, 0.555) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 0px 0px 4px 4px;
+    transform: translateY(0%);
+    background-color: var(--primary-color);
+    border: solid 1px var(--base-color);
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: pointer;
+}
+
+.home-section .carousel-caption.d-none.d-md-block {
+    top: 44% !important;
+    bottom: auto !important;
+}
+
+.download-button:hover .download {
+    transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+    animation: docs 1s infinite;
+}
+
+@keyframes docs {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.mainBtn:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+    top: 0;
+}
+
+.mainBtn:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+}
+
+.mainBtn span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 999;
+}
+
+.mainBtn:hover span {
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Example Usage */
+.heading-font {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.carousel-inner .carousel-item>img {
+
+    object-fit: cover;
+    animation: zoomin 10s linear infinite;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 3;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+}
+
+.h1,
+h1 {
+    color: var(--primary-color);
+}
+
+@keyframes zoomin {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.home-section {
+    position: relative;
+    top: -110px;
+    height: 600px;
+}
+
+.bg-color {
+    background-color: var(--base-color);
+    margin-top: 100px;
+
+    position: relative;
+}
+
+.bg-color h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    text-align: left;
+    padding: 20px;
+}
+
+.more-info-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/kitchen-tile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+.hovereffect img:hover,
+.hovereffect>div:hover {
+    transform: scale(1.1);
+}
+
+.hovereffect img,
+.hovereffect>div:hover {
+    transition: transform 0.5s;
+    object-fit: cover;
+}
+
+.more-info-section .card {
+    color: var(--base-color);
+    box-shadow: white 0px 2px 5px -1px, white 0px 1px 3px -1px;
+}
+
+.more-info-section .card i {
+    color: var(--primary-color);
+}
+
+.map-section {
+    position: relative;
+}
+
+.map-section iframe {
+    margin-bottom: -20px;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 420px;
+    left: -185px;
+    min-height: 200px;
+    ;
+}
+
+.menu-item:hover .mega-menu {
+    display: flex;
+}
+
+.nav-tabs {
+    flex-direction: column;
+    border-right: 2px solid #ddd;
+    min-width: 110px;
+    justify-content: space-around;
+    border-bottom: 0 !important;
+}
+
+.nav-tabs .nav-link {
+    color: var(--primary-color) !important;
+    border: none;
+    text-align: left;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active {
+    background-color: var(--primary-color);
+    color: var(--base-color) !important;
+}
+
+.tab-content {
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.img-fluid {
+    width: 280%;
+    height: 100%;
+}
+
+.hero {
+    object-fit: cover;
+    position: relative;
+    top: -110px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    position: absolute;
+    top: 0;
+}
+
+.content {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 80px;
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+}
+
+.heading {
+    font-size: 400%;
+}
