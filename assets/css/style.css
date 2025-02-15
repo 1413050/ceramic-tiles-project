@@ -28,8 +28,14 @@ h6.text-warning {
     background-color: #f8f9fa !important;
 }
 
+.header-top {
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 13;
+}
+
 .header-top a {
-    color: var(--primary-color);
+    color: #fff;
     text-decoration: none;
     padding: 0px 20px;
     /* margin: 0; */
@@ -38,7 +44,7 @@ h6.text-warning {
 
 .header-top .d-flex>div:first-child a:not(:nth-child(3)),
 .header-top .d-flex>div:nth-child(2) a:not(:nth-child(4)) {
-    border-right: 2px solid var(--primary-color);
+    border-right: 2px solid #fff;
 }
 
 /* From Uiverse.io by Damithkumara */
@@ -260,13 +266,22 @@ h1 {
 }
 
 .more-info-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/kitchen-tile.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about-img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 6rem 0;
     overflow: hidden;
+}
+
+.col-md-3 figure {
+    height: 350px;
+}
+
+.col-md-3 figure img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .hovereffect img:hover,
@@ -375,3 +390,33 @@ h1 {
 .heading {
     font-size: 400%;
 }
+
+.product_slider_nav ul.slick-dots {
+    display: flex
+;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.product_slider_nav ul.slick-dots li {
+    position: relative;
+}
+
+.product_slider_nav ul.slick-dots li::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    opacity: 0.6;
+    transition: all 0.3s ease-in;
+}
+.product_slider_nav ul.slick-dots li.slick-active::before{
+    opacity: 1;
+    width: 30px;
+}    
