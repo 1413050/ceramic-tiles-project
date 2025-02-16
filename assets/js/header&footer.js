@@ -1,19 +1,35 @@
-document.getElementById('header').innerHTML = `  <header>
+document.getElementById('header').innerHTML = `  <div class="header-top">
+<div class="container">
+  <div class="d-flex py-1 justify-content-between">
+    <div class="">
+      <a href=""><i class="ri-mail-fill"></i> </a>
+      <a href=""><i class="ri-phone-fill"></i> </a>
+      <a href=""><i class="ri-map-pin-2-fill"></i></a>
+    </div>
+    <div class="socail-media">
+      <a href=""><i class="ri-facebook-fill"></i></a>
+      <a href=""><i class="ri-instagram-fill"></i></a>
+      <a href=""><i class="ri-twitter-x-fill"></i></a>
+      <a href=""><i class="ri-linkedin-fill"></i></a>
+    </div>
+  </div>
+</div>
+</div><header>
     <nav class="navbar container navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./assets/images/logo/logo-white.png" alt=""
-            class="img-fluid w-50" /></a>
+        <a class="navbar-brand" href="#"><img src="./assets/images/logo/logo-black.png" alt=""
+            class="img-fluid  " /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 gap-4 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 gap-4 mb-lg-0">
             <li class="nav-item  fs-5">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item  fs-5">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item dropdown position-relative menu-item  fs-5">
               <a class="nav-link" href="#">Tiles Categories</a>
@@ -192,7 +208,7 @@ document.getElementById('footer').innerHTML = `   <!-- Footer -->
     <!-- Copyright -->
     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2025 Copyright:
-      <a class="text-reset fw-bold" href="#!">CeramicTiles/a>
+      <a class="text-reset fw-bold" href="#!">CeramicTiles</a>
     </div>
     <!-- Copyright -->
   </footer>

@@ -14,6 +14,58 @@
     src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.carousel-inner .carousel-item>img {
+
+    object-fit: cover;
+    animation: zoomin 10s linear infinite;
+}
+
+header {
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+}
+
+.navbar .nav-link {
+  font-family: 'Bebas Neue', sans-serif;
+    color: var(--base-color) !important;
+    position: relative;
+}
+.navbar .nav-link::after{
+    position: absolute !important;;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    bottom:10px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+}
+.navbar .nav-link:hover::after{
+    transform: scale(1);
+}
 h1.text-warning,
 h2.text-warning,
 h3.text-warning,
@@ -27,7 +79,14 @@ h6.text-warning {
 .bg-gray {
     background-color: #f8f9fa !important;
 }
-
+.navbar-brand {
+    width: 150px;
+}
+.navbar-brand img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .header-top {
     background-color: var(--primary-color);
     position: relative;
@@ -64,7 +123,7 @@ h6.text-warning {
 .download-button {
     position: relative;
     border-width: 0;
-    color: rgb(19, 19, 19);
+    color: #fff;
     font-size: 15px;
     font-weight: 600;
     border-radius: 4px;
@@ -80,7 +139,8 @@ h6.text-warning {
     padding: 0 10px;
     border-radius: 4px;
     z-index: 1;
-    background-color: #ffffff;
+    background-color: var(--base-color);
+    color: white;
     border: solid 1px #e8e8e82d;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
@@ -110,10 +170,17 @@ h6.text-warning {
 }
 
 .home-section .carousel-caption.d-none.d-md-block {
-    top: 44% !important;
+    top: 29% !important;
     bottom: auto !important;
 }
-
+.carousel{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.about_img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
 .download-button:hover .download {
     transform: translateY(100%);
 }
@@ -192,40 +259,6 @@ h6.text-warning {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-html {
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-}
-
-.carousel-inner .carousel-item>img {
-
-    object-fit: cover;
-    animation: zoomin 10s linear infinite;
-}
-
-header {
-    background-color: rgba(0, 0, 0, 0.3);
-    position: relative;
-    z-index: 3;
-}
-
-.navbar .nav-link {
-    color: #fff !important;
-}
-
 .h1,
 h1 {
     color: var(--primary-color);
@@ -247,10 +280,9 @@ h1 {
 
 .home-section {
     position: relative;
-    top: -110px;
-    height: 600px;
+    top: 0px;
+    height: 450px;
 }
-
 .bg-color {
     background-color: var(--base-color);
     margin-top: 100px;
@@ -354,10 +386,7 @@ h1 {
     padding-left: 15px;
 }
 
-.img-fluid {
-    width: 280%;
-    height: 100%;
-}
+ 
 
 .hero {
     object-fit: cover;
@@ -391,13 +420,19 @@ h1 {
     font-size: 400%;
 }
 
+
+.product_slider_nav .slick-slide img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
 .product_slider_nav ul.slick-dots {
-    display: flex
-;
+    display: flex;
     gap: 20px;
     justify-content: center;
     list-style: none;
-    margin-top: 30px;
 }
 
 .product_slider_nav ul.slick-dots li {
@@ -416,7 +451,32 @@ h1 {
     opacity: 0.6;
     transition: all 0.3s ease-in;
 }
-.product_slider_nav ul.slick-dots li.slick-active::before{
+
+.product_slider_nav ul.slick-dots li.slick-active::before {
     opacity: 1;
     width: 30px;
-}    
+}
+
+.product_slider_nav .slick-slide {
+    position: relative;
+    margin: 30px 10px;
+}
+
+.product_slider_nav .slick-slide>span {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    color: #fff;
+    text-align: center;
+    font-size:15px;
+    transition: all 0.3sease -in;
+    background: var(--primary-color);
+    padding: 10px 0;
+}
+.product_slider .slick-slide img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
