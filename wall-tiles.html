@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/imagehover.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <title>Ceramic Tiles</title>
+    <style>
+      .slick-list.draggable {
+        padding: 0 !important;
+      }
+      .slides img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+      }
+      .slick-dots {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <section class="home-section">
+      <div id="carouselExampleIndicators" class="carousel slide h-100">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/banner/wall_banner.png"
+              class="d-block w-100 h-100"
+              alt="..."
+              height="600px"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-warning display-1 inner_heading">Wall Tiles</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section container py-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="text-capitalize fw-bold heading-font fs-2">
+            Elegance in Every Detail
+          </h3>
+          <p>
+            Our premium ceramic wall tiles combine aesthetics with durability,
+            offering a perfect blend of style and practicality. Designed to
+            enhance interiors with their sophisticated textures and finishes,
+            these tiles are moisture-resistant, stain-resistant, and easy to
+            maintain. Whether you prefer bold modern statements or classic
+            timeless designs, our collection provides a diverse range of
+            patterns and colors to elevate any space. Ideal for bathrooms,
+            kitchens, living rooms, and commercial settings, our wall tiles
+            bring lasting beauty and functionality to your walls.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div id="tiles-container"></div>
+    <section class="container contact-card py-5">
+      <div class="bg-dark p-4 rounded-4">
+        <div class="text-center">
+          <h2
+            class="text-capitalize fw-bold display-4 text-warning text-white"
+            style="text-shadow: none"
+          >
+            Get in Touch with Us
+          </h2>
+          <h3 class="text-capitalize fw-bold heading-font fs-2 text-white">
+            Your Dream Space Begins with the Right Tiles
+          </h3>
+          <p class="mt-1 paraa-width text-white fw-bold">
+            We’d love to hear from you! Whether you have a question about our
+            products, need expert advice on tile selection,<br />
+            or require assistance with your order, our team is here to help.
+          </p>
+
+          <a href="contact.html" class="mainBtn"><span>Contact Us</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/header&footer.js"></script>
+    <script src="assets/js/tiles-data.js"></script>
+    <script>
+      $(document).ready(function () {
+        loadTiles(
+          "#tiles-container",
+          [
+            "Bedroom Tiles",
+            "Living Room Tiles",
+            "Kitchen Tiles",
+            "Bathroom Tiles",
+            "Commercial Spaces Tiles",
+          ],
+          "Wall"
+        );
+      });
+    </script>
+  </body>
+</html>

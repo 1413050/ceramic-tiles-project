@@ -18,7 +18,7 @@ document.getElementById('header').innerHTML = `  <div class="header-top">
 <header>
     <nav class="navbar container navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./assets/images/logo/logo-black.png" alt=""
+        <a class="navbar-brand" href="index.html"><img src="./assets/images/logo/logo-black.png" alt=""
             class="img-fluid  " /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@ document.getElementById('header').innerHTML = `  <div class="header-top">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 gap-4 mb-lg-0">
             <li class="nav-item  fs-5">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item  fs-5">
               <a class="nav-link" href="about.html">About</a>
@@ -51,17 +51,18 @@ document.getElementById('header').innerHTML = `  <div class="header-top">
                 </ul>
                 <div class="tab-content" id="tileTabsContent">
                   <div class="tab-pane fade show active" id="floor" role="tabpanel">
-                    <a href="floor-tiles.html" class="d-inline-block text-warning py-1 px-2 rounded">Bathroom Floor Tiles</a>
-                    <a href="kfloor.html" class="d-inline-block text-warning py-1 px-2 rounded">Kitchen Floor Tiles</a>
-                    <!-- <a href="#" class="d-inline-block text-warning py-1 px-2 rounded">Outdoor Floor Tiles</a> -->
-                    <a href="livingfloor.html" class="d-inline-block text-warning py-1 px-2 rounded">Living Room Floor Tiles</a>
-                    <a href="#" class="d-inline-block text-warning py-1 px-2 rounded">Bedroom  Floor Tiles</a>
-                    <a href="#" class="d-inline-block text-warning py-1 px-2 rounded">Commercial Spaces Tiles</a>
+                    <a href="floor-tiles.html#bathroom" class="d-inline-block text-warning py-1 px-2 rounded">Bathroom Floor Tiles</a>
+                    <a href="floor-tiles.html#kitchen" class="d-inline-block text-warning py-1 px-2 rounded">Kitchen Floor Tiles</a>                 
+                    <a href="floor-tiles.html#living" class="d-inline-block text-warning py-1 px-2 rounded">Living Room Floor Tiles</a>
+                    <a href="floor-tiles.html#bedroom" class="d-inline-block text-warning py-1 px-2 rounded">Bedroom  Floor Tiles</a>
+                    <a href="floor-tiles.html#spaces" class="d-inline-block text-warning py-1 px-2 rounded">Commercial Spaces Tiles</a>
                   </div>
                   <div class="tab-pane fade" id="wall" role="tabpanel">
-                    <a href="bwall.html" class="d-inline-block text-warning py-1 px-2 rounded">Bathroom Wall Tiles</a>
-                    <a href="kwall.html" class="d-inline-block text-warning py-1 px-2 rounded">Kitchen Wall Tiles</a>
-                    <a href="#" class="d-inline-block text-warning py-1 px-2 rounded">bedroom Wall Tiles</a>
+                  <a href="wall-tiles.html#bathroom" class="d-inline-block text-warning py-1 px-2 rounded">Bathroom Wall Tiles</a>
+                  <a href="wall-tiles.html#kitchen" class="d-inline-block text-warning py-1 px-2 rounded">Kitchen Wall Tiles</a>                 
+                  <a href="wall-tiles.html#living" class="d-inline-block text-warning py-1 px-2 rounded">Living Room Wall Tiles</a>
+                  <a href="wall-tiles.html#bedroom" class="d-inline-block text-warning py-1 px-2 rounded">Bedroom  Wall Tiles</a>
+                  <a href="wall-tiles.html#spaces" class="d-inline-block text-warning py-1 px-2 rounded">Commercial Spaces Tiles</a>
                   </div>
                   <div class="tab-pane fade" id="special" role="tabpanel">
                    <div> <a href="#" class="d-inline-block text-warning py-1 px-2 rounded">Mosaic Tiles</a> </div>
@@ -71,6 +72,10 @@ document.getElementById('header').innerHTML = `  <div class="header-top">
                 </div>
               </div>
             </li>
+            <li class="nav-item  fs-5">
+              <a class="nav-link" href="compare.html">Compare Tiles</a>
+            </li> 
+
             <li class="nav-item  fs-5">
               <a class="nav-link" href="contact.html">Contact us</a>
             </li> 

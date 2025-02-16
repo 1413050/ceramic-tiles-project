@@ -63,6 +63,11 @@ header {
     transition: all 0.3s ease-in-out;
     transform: scale(0);
 }
+.inner_heading{
+    color: white !important;
+    text-shadow: none !important;
+    -webkit-text-stroke: 2px var(--primary-color);
+}
 #tileTabsContent a::before{
     bottom:0px; 
 }
@@ -445,18 +450,18 @@ footer a:hover{
 }
 
 
-.product_slider_nav ul.slick-dots {
+ ul.slick-dots {
     display: flex;
     gap: 20px;
     justify-content: center;
     list-style: none;
 }
-
-.product_slider_nav ul.slick-dots li {
+ 
+ ul.slick-dots li {
     position: relative;
 }
 
-.product_slider_nav ul.slick-dots li::before {
+ ul.slick-dots li::before {
     position: absolute;
     content: "";
     width: 10px;
@@ -469,7 +474,7 @@ footer a:hover{
     transition: all 0.3s ease-in;
 }
 
-.product_slider_nav ul.slick-dots li.slick-active::before {
+ ul.slick-dots li.slick-active::before {
     opacity: 1;
     width: 30px;
 }

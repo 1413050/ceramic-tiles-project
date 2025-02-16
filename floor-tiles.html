@@ -1,231 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/imagehover.min.css" />
     <link rel="stylesheet" href="assets/css/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
     <title>Ceramic Tiles</title>
-</head>
+    <style>
+      .slick-list.draggable {
+        padding: 0 !important;
+      }
+      .slides img {
+        height: 250px;
+        object-fit: cover;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+      }
+      .slick-dots {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <div id="header"></div>
     <section class="home-section">
-        <div id="carouselExampleIndicators" class="carousel slide h-100">
-            <div class="carousel-inner h-100">
-                <div class="carousel-item active">
-                    <img src="assets/images/banner/about_banner.png" class="d-block w-100 h-100" alt="..."
-                        height="600px" />
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="text-warning display-1">Floor Tiles</h2>
-                    </div>
-                </div>
+      <div id="carouselExampleIndicators" class="carousel slide h-100">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/banner/floor_banner.png"
+              class="d-block w-100 h-100"
+              alt="..."
+              height="600px"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-warning display-1 inner_heading">Floor Tiles</h2>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="about-section container py-5">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="text-capitalize fw-bold display-4 text-warning">
-                    Floor Tiles
-
-                </h2>
-                <h3 class="text-capitalize fw-bold heading-font fs-2">
-                    Durability Meets Design
-
-
-                </h3>
-                <p>
-                    Our premium ceramic floor tiles are crafted for durability, style, and functionality. Designed to
-                    withstand heavy foot traffic, these tiles are resistant to stains, moisture, and scratches, making
-                    them perfect for both residential and commercial spaces. Whether you prefer sleek modern aesthetics
-                    or timeless traditional designs, our floor tile collection offers a wide range of colors, textures,
-                    and finishes to complement any interior. Easy to clean and maintain, they ensure a long-lasting and
-                    elegant flooring solution for every space.
-                </p> 
-            </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="text-capitalize fw-bold heading-font fs-2">
+            Durability Meets Design
+          </h3>
+          <p>
+            Our premium ceramic floor tiles are crafted for durability, style,
+            and functionality. Designed to withstand heavy foot traffic, these
+            tiles are resistant to stains, moisture, and scratches, making them
+            perfect for both residential and commercial spaces. Whether you
+            prefer sleek modern aesthetics or timeless traditional designs, our
+            floor tile collection offers a wide range of colors, textures, and
+            finishes to complement any interior. Easy to clean and maintain,
+            they ensure a long-lasting and elegant flooring solution for every
+            space.
+          </p>
         </div>
+      </div>
     </section>
 
-    <section class="about-section bg-gray">
-        <div class="row text-center container mx-auto py-5">
-            <h2 class="text-capitalize fw-bold mb-4 display-5 text-warning">
-                Bring Radiant Home High Quality Affordable Flooring
-            </h2>
-            <div class="col-md-3 mb-4">
-                <figure class="imghvr-slide-up">
-                    <img src="assets/images/radiant-1.jpg" alt="example-image" class="img-fluid w-100" />
-                    <a href="#">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">Oscar Wilde</h3>
-                            <p class="ih-zoom-in ih-delay-md">
-                                <i>"I have the simplest tastes, I am always satisfied with the
-                                    best."</i>
-                            </p>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-md-3 mb-4">
-                <figure class="imghvr-slide-up">
-                    <img src="assets/images/radiant-2.jpg" alt="example-image" class="img-fluid w-100" />
-                    <a href="#">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">Oscar Wilde</h3>
-                            <p class="ih-zoom-in ih-delay-md">
-                                <i>"I have the simplest tastes, I am always satisfied with the
-                                    best."</i>
-                            </p>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-md-3 mb-4">
-                <figure class="imghvr-slide-up">
-                    <img src="assets/images/radiant-3.jpg" alt="example-image" class="img-fluid w-100" />
-                    <a href="#">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">Oscar Wilde</h3>
-                            <p class="ih-zoom-in ih-delay-md">
-                                <i>"I have the simplest tastes, I am always satisfied with the
-                                    best."</i>
-                            </p>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-            <div class="col-md-3 mb-4">
-                <figure class="imghvr-slide-up">
-                    <img src="assets/images/radiant-4.jpg" alt="example-image" class="img-fluid w-100" />
-                    <a href="#">
-                        <figcaption>
-                            <h3 class="ih-fade-down ih-delay-sm">Oscar Wilde</h3>
-                            <p class="ih-zoom-in ih-delay-md">
-                                <i>"I have the simplest tastes, I am always satisfied with the
-                                    best."</i>
-                            </p>
-                        </figcaption>
-                    </a>
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-color more-info-section mt-0">
-        <div class="container">
-            <div class="row gy-5">
-                <h2 class="text-capitalize fw-bold display-4 text-warning text-white" style="text-shadow: none">
-                    WHY CERAMIC TILES?
-                </h2>
-                <p class="mt-1 paraa-width text-white">
-                    As a leading global tile 1 ceramic product company, we are committed
-                    to providing the best quality products to our customers. We have a
-                    wide range of products that are suitable for all types of projects.
-                    Our products are made from the finest materials and are designed to
-                    last for years.
-                </p>
-                <div class="col-md-4 hovereffect">
-                    <div class="card py-5 h-100">
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-capitalize">
-                                <i class="ri-stack-fill display-4"></i>
-                            </h4>
-                            <h5 class="card-title text-capitalize fs-3 fw-bolder">
-                                Highly Equipped
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 hovereffect">
-                    <div class="card py-5 h-100">
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-capitalize">
-                                <i class="ri-medal-line display-4"></i>
-                            </h4>
-                            <h5 class="card-title text-capitalize fs-3 fw-bolder">
-                                Highly Skilled
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 hovereffect">
-                    <div class="card py-5 h-100">
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-capitalize">
-                                <i class="ri-global-fill display-4"></i>
-                            </h4>
-                            <h5 class="card-title text-capitalize fs-3 fw-bolder">
-                                Global Reach
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 hovereffect">
-                    <div class="card py-5 h-100">
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-capitalize">
-                                <i class="ri-numbers-fill display-4"></i>
-                            </h4>
-                            <h5 class="card-title text-capitalize fs-3 fw-bolder">
-                                Production Capacity
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 hovereffect">
-                    <div class="card py-5 h-100">
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-capitalize">
-                                <i class="ri-government-fill display-4"></i>
-                            </h4>
-                            <h5 class="card-title text-capitalize fs-3 fw-bolder">
-                                Exclusive Showrooms
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 hovereffect">
-                    <div class="card py-5 h-100">
-                        <div class="card-body text-center">
-                            <h4 class="card-title text-capitalize">
-                                <i class="ri-trophy-fill display-4"></i>
-                            </h4>
-                            <h5 class="card-title text-capitalize fs-3 fw-bolder">
-                                Best <br />
-                                Achievements
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <div id="tiles-container"></div>
     <section class="container contact-card py-5">
-        <div class="bg-dark p-4 rounded-4 ">
-            <div class="text-center">
-                <h2 class="text-capitalize fw-bold display-4 text-warning text-white" style="text-shadow: none">
-                    Get in Touch with Us
+      <div class="bg-dark p-4 rounded-4">
+        <div class="text-center">
+          <h2
+            class="text-capitalize fw-bold display-4 text-warning text-white"
+            style="text-shadow: none"
+          >
+            Get in Touch with Us
+          </h2>
+          <h3 class="text-capitalize fw-bold heading-font fs-2 text-white">
+            Your Dream Space Begins with the Right Tiles
+          </h3>
+          <p class="mt-1 paraa-width text-white fw-bold">
+            We’d love to hear from you! Whether you have a question about our
+            products, need expert advice on tile selection,<br />
+            or require assistance with your order, our team is here to help.
+          </p>
 
-                </h2>
-                <h3 class="text-capitalize fw-bold heading-font fs-2 text-white">
-                    Your Dream Space Begins with the Right Tiles
-
-
-                </h3>
-                <p class="mt-1 paraa-width text-white fw-bold">
-                    We’d love to hear from you! Whether you have a question about our products, need expert advice on
-                    tile selection,<br> or require assistance with your order, our team is here to help.
-                </p>
-
-                <a href="contact.html" class="mainBtn"><span>Contact Us</span></a>
-            </div>
+          <a href="contact.html" class="mainBtn"><span>Contact Us</span></a>
         </div>
+      </div>
     </section>
     <div id="footer"></div>
 
@@ -234,8 +100,23 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
-
+    <script src="assets/js/lightbox.min.js"></script>
     <script src="assets/js/header&footer.js"></script>
-</body>
-
+    <script src="assets/js/tiles-data.js"></script>
+    <script>
+      $(document).ready(function () {
+        loadTiles(
+          "#tiles-container",
+          [
+          "Bedroom Tiles",
+            "Living Room Tiles",
+            "Kitchen Tiles",
+            "Bathroom Tiles",
+            "Commercial Spaces Tiles",
+          ],
+          "Floor"
+        );
+      });
+    </script>
+  </body>
 </html>
