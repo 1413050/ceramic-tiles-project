@@ -77,6 +77,9 @@ document.getElementById('header').innerHTML = `  <div class="header-top">
             </li> 
 
             <li class="nav-item  fs-5">
+              <a class="nav-link" href="expert-corner.html">Experts Corner</a>
+            </li> 
+            <li class="nav-item  fs-5">
               <a class="nav-link" href="contact.html">Contact us</a>
             </li> 
               
@@ -159,13 +162,13 @@ document.getElementById('footer').innerHTML = `   <!-- Footer -->
               Tiles
             </h6>
             <p>
-              <a href="#!" class="text-reset">Floor Tiles</a>
+              <a href="floor-tiles.html" class="text-reset">Floor Tiles</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Wall Tiles</a>
+              <a href="wall-tiles.html" class="text-reset">Wall Tiles</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Special Tiles</a>
+              <a href="special-tiles.html" class="text-reset">Special Tiles</a>
             </p>
 
           </div>
@@ -178,16 +181,19 @@ document.getElementById('footer').innerHTML = `   <!-- Footer -->
               Direct pages
             </h6>
             <p>
-              <a href="#!" class="text-reset">Home</a>
+              <a href="index.html" class="text-reset">Home</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">About</a>
+              <a href="about.html" class="text-reset">About</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Tiles</a>
+              <a href="expert-corner.html" class="text-reset">Expert Corner</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Contact</a>
+              <a href="compare.html" class="text-reset">Compare</a>
+            </p>
+            <p>
+              <a href="contact.html" class="text-reset">Contact</a>
             </p>
           </div>
           <!-- Grid column -->

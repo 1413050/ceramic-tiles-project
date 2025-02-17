@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/imagehover.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <title>Ceramic Tiles</title>
+    <style>
+        /* Custom styles */
+        .tile-card img {
+            height: 200px;
+            object-fit: cover;
+        } 
+        .comparison-tile img,.comparison-table img {
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <section class="home-section">
+      <div id="carouselExampleIndicators" class="carousel slide h-100">
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active">
+            <img
+              src="assets/images/banner/wall_banner.png"
+              class="d-block w-100 h-100"
+              alt="..."
+              height="600px"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-warning display-1 inner_heading">Compare Tiles</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section container py-5">
+      <div class="row">
+        <div class="col-md-12 text-center">
+            <div id="comparison-container" class="mb-4"></div>
+
+            <!-- Tiles List -->
+            <div id="tiles-container" class="row"></div>
+      </div>
+    </section>
+ 
+    <section class="container contact-card py-5">
+      <div class="bg-dark p-4 rounded-4">
+        <div class="text-center">
+          <h2
+            class="text-capitalize fw-bold display-4 text-warning text-white"
+            style="text-shadow: none"
+          >
+            Get in Touch with Us
+          </h2>
+          <h3 class="text-capitalize fw-bold heading-font fs-2 text-white">
+            Your Dream Space Begins with the Right Tiles
+          </h3>
+          <p class="mt-1 paraa-width text-white fw-bold">
+            We’d love to hear from you! Whether you have a question about our
+            products, need expert advice on tile selection,<br />
+            or require assistance with your order, our team is here to help.
+          </p>
+
+          <a href="contact.html" class="mainBtn"><span>Contact Us</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/header&footer.js"></script>
+    <script src="assets/js/tiles-data.js"></script>
+   <script>
+   $(document).ready(function () {
+    const tilesContainer = $("#tiles-container");
+    const comparisonContainer = $("#comparison-container");
+    const paginationContainer = $('<div class="text-center mt-4"><button id="prevPage" class="btn btn-secondary mx-2">Previous</button><span id="pageNumber" class="mx-3"></span><button id="nextPage" class="btn btn-secondary mx-2">Next</button></div>');
+    
+    let selectedTiles = [];
+    let currentPage = 1;
+    const tilesPerPage = 12;
+    let allTiles = [];
+
+    function renderTiles() {
+        tilesContainer.empty();
+        allTiles = [];
+        
+        // Extract all tiles from tilesData
+        $.each(tilesData, function (category, details) {
+            ["Wall", "Floor"].forEach(type => {
+                details[type].forEach(tile => {
+                    allTiles.push(tile);
+                });
+            });
+        });
+
+        updatePagination();
+    }
+
+    function updatePagination() {
+        const totalTiles = allTiles.length;
+        const totalPages = Math.ceil(totalTiles / tilesPerPage);
+
+        if (currentPage > totalPages) currentPage = totalPages;
+        if (currentPage < 1) currentPage = 1;
+
+        const startIndex = (currentPage - 1) * tilesPerPage;
+        const endIndex = startIndex + tilesPerPage;
+
+        // Show only tiles for the current page
+        tilesContainer.empty();
+        allTiles.slice(startIndex, endIndex).forEach(tile => {
+            const tileCard = $(`
+                <div class="col-md-3 mb-4">
+                    <div class="card tile-card shadow-sm">
+                        <img src="${tile.image}" class="card-img-top" alt="Tile">
+                        <div class="card-body text-center">
+                            <p class="card-text">${tile.description}</p>
+                            <button class="btn btn-sm btn-warning add-to-compare text-white" data-tile='${JSON.stringify(tile)}'>Compare</button>
+                        </div>
+                    </div>
+                </div>
+            `);
+            tilesContainer.append(tileCard);
+        });
+
+        // Update pagination controls
+        $("#pageNumber").text(`Page ${currentPage} of ${totalPages}`);
+        $("#prevPage").prop("disabled", currentPage === 1);
+        $("#nextPage").prop("disabled", currentPage === totalPages);
+
+        // Append pagination buttons
+        if (!paginationContainer.parent().length) {
+            tilesContainer.after(paginationContainer);
+        }
+    }
+
+    function updateComparison() {
+        comparisonContainer.empty();
+        if (selectedTiles.length === 0) {
+            comparisonContainer.hide();
+            return;
+        }
+
+        comparisonContainer.show();
+        let comparisonHtml = `
+            <div class="comparison-table table-responsive">
+                <table class="table table-bordered">
+                    <thead class="table-warning">
+                        <tr>
+                            <th>Tile</th>
+                            ${selectedTiles.map(tile => `<th><img src="${tile.image}" class="comparison-tile img-fluid"></th>`).join("")}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Description</td>${selectedTiles.map(tile => `<td>${tile.description}</td>`).join("")}</tr>
+                        <tr><td>Material</td>${selectedTiles.map(tile => `<td>${tile.material}</td>`).join("")}</tr>
+                        <tr><td>Finish</td>${selectedTiles.map(tile => `<td>${tile.finish}</td>`).join("")}</tr>
+                        <tr><td>Water Resistance</td>${selectedTiles.map(tile => `<td>${tile.water_resistance}</td>`).join("")}</tr>
+                        <tr><td>Scratch Resistance</td>${selectedTiles.map(tile => `<td>${tile.scratch_resistance}</td>`).join("")}</tr>
+                        <tr><td>Slip Resistance</td>${selectedTiles.map(tile => `<td>${tile.slip_resistance}</td>`).join("")}</tr>
+                        <tr><td>Color</td>${selectedTiles.map(tile => `<td>${tile.color}</td>`).join("")}</tr>
+                        <tr>
+                            <td>Remove</td>
+                            ${selectedTiles.map((_, index) => `<td><button class="btn btn-danger btn-sm remove-tile" data-index="${index}">X</button></td>`).join("")}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        `;
+        comparisonContainer.html(comparisonHtml);
+    }
+
+    // Handle Add to Compare
+    tilesContainer.on("click", ".add-to-compare", function () {
+        if (selectedTiles.length >= 2) {
+            alert("You can compare only two tiles at a time.");
+            return;
+        }
+
+        const tile = JSON.parse($(this).attr("data-tile"));
+        if (!selectedTiles.some(t => t.image === tile.image)) {
+            selectedTiles.push(tile);
+            updateComparison();
+        }
+    });
+
+    // Handle Remove from Compare
+    comparisonContainer.on("click", ".remove-tile", function () {
+        const index = $(this).data("index");
+        selectedTiles.splice(index, 1);
+        updateComparison();
+    });
+
+    // Handle Pagination Buttons
+    paginationContainer.on("click", "#prevPage", function () {
+        if (currentPage > 1) {
+            currentPage--;
+            updatePagination();
+        }
+    });
+
+    paginationContainer.on("click", "#nextPage", function () {
+        if (currentPage * tilesPerPage < allTiles.length) {
+            currentPage++;
+            updatePagination();
+        }
+    });
+
+    renderTiles();
+});
+
+
+   </script>
+  </body>
+</html>

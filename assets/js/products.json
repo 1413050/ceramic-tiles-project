@@ -5,70 +5,70 @@
         "type": "Wall",
         "image": "assets/images/products/product-5.jpg",
         "description": "Our ceramic bathroom wall tiles are crafted to bring elegance and durability to your bathroom space. With moisture-resistant properties, these tiles prevent water absorption, reducing mold and mildew buildup. Available in various colors and textures, they complement any bathroom design. Their glossy finish ensures easy cleaning, making them ideal for maintaining hygiene. Perfect for modern and traditional interiors alike, these tiles offer a sleek and sophisticated look while maintaining long-lasting durability. Whether you prefer neutral tones or vibrant hues, our collection provides a diverse range of choices for an aesthetically pleasing bathroom.",
-        "document": "assets/documents/bathroom-wall.pdf"
+        "document": "assets/documents/Bathroom_Tiles.docx"
       },
       {
         "category": "Bathroom Tiles",
         "type": "Floor",
         "image": "assets/images/products/product-6.jpg",
         "description": "Designed for high moisture environments, our ceramic bathroom floor tiles offer slip-resistant properties, ensuring safety and comfort. The sturdy material makes them highly durable, perfect for high-traffic areas. With a range of matte, glossy, and textured finishes, they add a stylish and functional touch to your bathroom. These tiles are easy to clean, stain-resistant, and maintain their shine over time. Available in multiple designs and colors, they enhance the aesthetic of any bathroom setting. Their ability to withstand wear and tear makes them an excellent investment for a long-lasting, elegant bathroom floor.",
-        "document": "assets/documents/bathroom-floor.pdf"
+        "document": "assets/documents/Bathroom_Tiles.docx"
       },
       {
         "category": "Kitchen Tiles",
         "type": "Wall",
         "image": "assets/images/products/product-7.jpg",
         "description": "Our ceramic kitchen wall tiles combine style and practicality, making them an excellent choice for any cooking space. These tiles are heat-resistant, stain-resistant, and easy to clean, ensuring longevity and hygiene. Available in various finishes, from glossy to matte, they provide a seamless blend with any kitchen decor. Their durable surface prevents grease buildup, making maintenance hassle-free. Whether you prefer contemporary designs or classic aesthetics, our extensive range ensures you'll find the perfect match. Elevate your kitchen ambiance with tiles that add beauty, protection, and functionality to your walls.",
-        "document": "assets/documents/kitchen-wall.pdf"
+        "document": "assets/documents/Kitchen_Tiles.docx"
       },
       {
         "category": "Kitchen Tiles",
         "type": "Floor",
         "image": "assets/images/products/product-8.jpg",
         "description": "Crafted to withstand heavy foot traffic, our ceramic kitchen floor tiles are designed for durability and style. They are resistant to stains, moisture, and scratches, making them ideal for a busy kitchen environment. Their non-slip surface provides safety, reducing the risk of accidents. Available in diverse patterns, colors, and finishes, they allow you to create a unique kitchen atmosphere. Easy to maintain and highly durable, these tiles are an excellent choice for anyone looking to upgrade their kitchen flooring with a blend of aesthetics and functionality.",
-        "document": "assets/documents/kitchen-floor.pdf"
+        "document": "assets/documents/Kitchen_Tiles.docx"
       },
       {
         "category": "Living Room Tiles",
         "type": "Wall",
         "image": "assets/images/products/product-3.jpg",
         "description": "Our ceramic living room wall tiles bring a perfect balance of elegance and durability to your home. These tiles offer a unique way to add texture and color to your walls while providing long-lasting strength. With multiple design choices, including modern and traditional patterns, they can transform your living space. Their smooth surface allows easy cleaning, ensuring your walls remain spotless. Whether you desire a bold statement piece or a subtle enhancement, our collection ensures a stylish and inviting living room that reflects your personal taste.",
-        "document": "assets/documents/livingroom-wall.pdf"
+        "document": "assets/documents/Living_Room_Tiles.docx"
       },
       {
         "category": "Living Room Tiles",
         "type": "Floor",
         "image": "assets/images/products/product-4.jpg",
         "description": "Add sophistication to your home with our ceramic living room floor tiles. These tiles are built for high foot traffic, offering scratch and stain resistance while maintaining their beauty. Their versatile designs range from contemporary to classic, providing options that suit any interior theme. Easy to clean and highly durable, they enhance both comfort and style. Whether you want a warm, cozy feel or a sleek modern touch, our collection ensures that your living room floor complements your desired ambiance effortlessly.",
-        "document": "assets/documents/livingroom-floor.pdf"
+        "document": "assets/documents/Living_Room_Tiles.docx"
       },
       {
         "category": "Bedroom Tiles",
         "type": "Wall",
         "image": "assets/images/products/product-1.jpg",
         "description": "Transform your bedroom with our premium ceramic wall tiles, designed to enhance both beauty and comfort. These tiles offer a smooth, easy-to-clean surface that resists stains and dust, ensuring a hygienic environment. Available in a variety of shades, patterns, and textures, they complement any bedroom theme, whether modern or traditional. The durability and moisture resistance of our tiles make them a long-lasting choice. Create a cozy and stylish ambiance in your personal space with tiles that add both charm and functionality to your walls.",
-        "document": "assets/documents/bedroom-wall.pdf"
+        "document": "assets/documents/Bedroom_Tiles.docx"
       },
       {
         "category": "Bedroom Tiles",
         "type": "Floor",
         "image": "assets/images/products/product-2.jpg",
         "description": "Enhance your bedroom’s elegance with our high-quality ceramic floor tiles. These tiles provide a perfect balance of durability and aesthetic appeal, making them ideal for a relaxing and stylish space. Designed for comfort, they feature a smooth yet non-slip surface that feels great underfoot. Available in various designs, including wood, marble, and stone textures, they allow you to personalize your bedroom’s look. Resistant to stains, scratches, and moisture, these tiles are an excellent long-term investment for a cozy and visually appealing bedroom.",
-        "document": "assets/documents/bedroom-floor.pdf"
+        "document": "assets/documents/Bedroom_Tiles.docx"
       },
       {
         "category": "Commercial Spaces Tiles",
         "type": "Wall",
         "image": "assets/images/products/product-9.jpg",
         "description": "Our commercial spaces wall tiles are designed to provide durability and elegance in high-traffic environments. These tiles are resistant to scratches, stains, and moisture, making them ideal for offices, retail stores, and other commercial establishments. Available in a range of designs and colors, they enhance the professional aesthetic of any space while ensuring long-term performance.",
-        "document": "assets/documents/commercial-wall.pdf"
+        "document": "assets/documents/Commercial_Spaces_Tiles.docx"
       },
       {
         "category": "Commercial Spaces Tiles",
         "type": "Floor",
         "image": "assets/images/products/product-10.jpg",
         "description": "Designed for high foot traffic, our commercial floor tiles offer unmatched durability and style. These tiles are made to withstand heavy usage while maintaining their aesthetic appeal. With anti-slip and stain-resistant properties, they are perfect for malls, offices, and public areas. Easy to maintain and highly resilient, our collection ensures a sophisticated and long-lasting flooring solution for commercial spaces.",
-        "document": "assets/documents/commercial-floor.pdf"
+        "document": "assets/documents/Commercial_Spaces_Tiles.docx"
       }
     ]
   }
