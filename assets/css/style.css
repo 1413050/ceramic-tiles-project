@@ -6,12 +6,12 @@
 /* 003566 */
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('/assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'poppins';
-    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 
